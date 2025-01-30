@@ -73,18 +73,6 @@
 
 这就导致当你`npm install`后再执行 git commit 命令时，会触发 husky 钩子，而 husky 钩子会执行 lint-staged 命令，而 lint-staged 命令会执行 prettier-eslint 和 eslint 命令，而这些命令都是基于 linux 系统的，所以会报上述错误。
 
-## 找寻原因
+## 解决方案
 
-尝试运行：
-
-```bash
-npx prettier-eslint --write .\excel.js
-```
-
-发现可以正常运行。
-
-尝试运行：
-
-```bash
-npx eslint --format .\excel.js node_modules/eslint-friendly-formatter 
-```
+先把 husky 钩子和 lint-staged 命令注释掉。
