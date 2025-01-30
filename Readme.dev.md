@@ -1,4 +1,18 @@
-# ExcelJS
+# Readme.dev.md
+
+本文档为开发文档。
+
+## 项目结构
+
+- lib/ 存放主要的功能代码
+  - /doc/ 存放ExcelJS 的核心数据模型和操作接口
+  - /xlsx/ 存放读取xlsx文件相关的功能代码
+  - /csv/ 存放读取csv文件相关的功能代码
+  - /stream/ 存放流式读取相关的代码
+    - /xlsx/ 存放流式读取xlsx文件相关的代码（目前仅支持xlsx）
+  - /utils/ 存放工具类相关的代码
+- test/ 存放测试代码
+- spec/ 存放测试用例
 
 注意，如果是在 windows 系统下开发，当你 build 之后会发现 git commit 报错：
 
