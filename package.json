@@ -58,7 +58,6 @@
     "preversion": "npm run clean && npm run build && npm run test:version",
     "postversion": "git push --no-verify && git push --tags --no-verify"
   },
-
   "keywords": [
     "xlsx",
     "json",
