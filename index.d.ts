@@ -1718,6 +1718,7 @@ export class Workbook {
 	properties: WorkbookProperties;
 	subject: string;
     title: string;
+	charts: any;
 
 	/**
 	 * Workbook calculation Properties

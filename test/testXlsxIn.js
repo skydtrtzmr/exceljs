@@ -20,6 +20,10 @@ wb.xlsx
     wb.eachSheet((sheet, id) => {
       console.log(id, sheet.name);
     });
+
+    console.log('wb.model:', wb.model);
+    // console.log('wb.xlsx:', wb.xlsx);
+    
   })
   .catch(error => {
     console.error('something went wrong', error.stack);
