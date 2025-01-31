@@ -1,4 +1,4 @@
-const ChartXform = require('../../../../../lib/xlsx/xform/chart/chart-xform');
+const ChartXform = require('../../../../../lib/xlsx/xform/chart/chart-space-xform');
 const testXformHelper = require('../test-xform-helper');
 
 const expectations = [
