@@ -21,7 +21,9 @@ wb.xlsx
       console.log(id, sheet.name);
     });
 
-    console.log('wb.model:', wb.model);
+    // console.log('wb.model:', wb.model);
+    console.log('wb.model.charts:', wb.model.charts['1']);
+    console.log('wb.model.charts:', wb.model.charts['1'].chart.plotArea);
     // console.log('wb.xlsx:', wb.xlsx);
     
   })
