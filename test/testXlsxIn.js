@@ -10,7 +10,7 @@ const stopwatch = new HrStopwatch();
 stopwatch.start();
 
 wb.xlsx
-  .readFile(filename)
+  .readFile(filename, {})
   .then(() => {
     const micros = stopwatch.microseconds;
 
@@ -21,10 +21,7 @@ wb.xlsx
       console.log(id, sheet.name);
     });
 
-    // console.log('wb.model:', wb.model);
-    console.log('wb.model.charts:', wb.model.charts['1']);
-    console.log('wb.model.charts:', wb.model.charts['1'].chart.plotArea);
-    // console.log('wb.xlsx:', wb.xlsx);
+    console.log('wb.model:', wb.model);
     
   })
   .catch(error => {
